@@ -4,29 +4,29 @@
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
-  background-image: linear-gradient(
-    to bottom,
-    #000000 0%,
-    #000000 81.5%,
-    #ffffff 50%,
-    #ffffff 100%
-  );
-  background-repeat: no-repeat;
+  height: 100vh;
+  background-color: #ffffff;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 header {
   background-color: #000000;
   height: 90px;
-
   margin: auto -16px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
+.contentsection {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  height: 50vh;
+}
 
 hr {
-  border: 1px solid #ffffff1f;
-  background: #ffffff1f;
+  height: 1px;
+  border-width: 0;
+  background-color: #292929;
 }
 
 footer {
@@ -212,7 +212,7 @@ li {
 
 #contentTitle {
   margin-top: 52px;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 32px;
   font-weight: 200;
   line-height: 39px;
@@ -226,10 +226,6 @@ header a {
 }
 
 .cardsInARow {
-  position: absolute;
-  top: 718px;
-  left: 185px;
-
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -244,21 +240,24 @@ header a {
 
 #Ellipse2 {
   position: absolute;
+  top: 291.82px;
   width: 535.38px;
   height: 91.76px;
   border: 2px;
-  margin-top: 96px;
+  /*margin-top: 96px;*/
 }
 
 #Ellipse1 {
   position: absolute;
+  top: 273.11px;
   width: 748.13px;
   height: 129.17px;
   border: 4px;
-  margin-top: 96px;
+  /*margin-top: 96px;*/
 }
 
 #mercedesImage {
+  position: relative;
   width: 514px;
   height: 143px;
   margin-top: 42px;
@@ -267,9 +266,6 @@ header a {
 #Reservation-font {
   width: 219px;
   height: 27px;
-  position: absolute;
-  top: 440px;
-  left: 185px;
   font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -277,14 +273,16 @@ header a {
   letter-spacing: 0em;
   text-align: center;
   color: #ffffff;
+  margin-left: 340px;
 }
 
 .rectangleDateBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   width: 1030px;
   height: 129px;
-  position: absolute;
-  top: 490px;
-  left: 185px;
   border-radius: 17px;
   background: linear-gradient(0deg, #ffffff, #ffffff);
   border: 1px solid #00000021;
@@ -292,11 +290,9 @@ header a {
 }
 
 #lookvehiclesBT {
-  position: absolute;
-  top: 56px;
-  right: 32px;
   width: 157px;
   height: 43px;
+  margin-top: 25px;
   border-radius: 8px;
   background: #000000;
   font-family: "Inter", sans-serif;
@@ -315,14 +311,8 @@ header a {
   gap: 7px;
 }
 
-.rectangleDateBox {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 .leftsideofbox {
-  position: absolute;
+  /* position: absolute; */
   top: 32px;
   left: 32px;
   display: flex;
@@ -374,11 +364,8 @@ header a {
 }
 
 h1 {
-  position: absolute;
   width: 93px;
   height: 27px;
-  top: 673px;
-  left: 185px;
   font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 700;
@@ -386,4 +373,35 @@ h1 {
   letter-spacing: 0em;
   text-align: center;
   color: #000000;
+}
+
+/*.divdatebox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}*/
+
+.divvehicles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.all {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 54px;
+}
+
+.allall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.divdatebox {
+  margin-top: -69px;
 }
