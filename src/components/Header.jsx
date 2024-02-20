@@ -20,7 +20,7 @@ function Header() {
   return (
     <>
       <header>
-        <div className="container">
+        <div className="container1">
           <img id="logo" src="Group2.png" alt="logo" />
           <div className="navbarLinks">
             <ul>
