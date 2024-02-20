@@ -20,7 +20,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: #000000;
-  height: 50vh;
+  height: 464px;
 }
 
 hr {
@@ -30,7 +30,6 @@ hr {
 }
 
 footer {
-  position: absolute;
   text-align: center;
   bottom: 0;
   width: 100%;
@@ -38,8 +37,7 @@ footer {
 }
 
 footer p {
-  color: #ffffff1f;
-
+  color: #292929;
   font-size: 14px;
 }
 
@@ -75,7 +73,7 @@ li {
   margin-top: 43px;
 }
 
-.container {
+.container1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -264,23 +262,24 @@ header a {
 }
 
 #Reservation-font {
-  width: 219px;
-  height: 27px;
+  /* width: 219px; */
+  /* height: 27px; */
   font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 700;
-  line-height: 27px;
-  letter-spacing: 0em;
-  text-align: center;
+  /* line-height: 27px; */
+  /* letter-spacing: 0em; */
+  /* text-align: center; */
   color: #ffffff;
-  margin-left: 340px;
+  /* margin-left: 340px; */
+  margin-bottom: 23px;
 }
 
 .rectangleDateBox {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   width: 1030px;
   height: 129px;
   border-radius: 17px;
@@ -293,6 +292,7 @@ header a {
   width: 157px;
   height: 43px;
   margin-top: 25px;
+  margin-right: -25.5px;
   border-radius: 8px;
   background: #000000;
   font-family: "Inter", sans-serif;
@@ -309,16 +309,6 @@ header a {
   display: flex;
   flex-direction: column;
   gap: 7px;
-}
-
-.leftsideofbox {
-  /* position: absolute; */
-  top: 32px;
-  left: 32px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 72.5px;
 }
 
 .pickuptimebox p,
@@ -387,13 +377,13 @@ h1 {
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
+  margin-top: 54px;
 }
 
 .all {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 54px;
 }
 
 .allall {
@@ -403,5 +393,5 @@ h1 {
 }
 
 .divdatebox {
-  margin-top: -69px;
+  margin-top: -116px;
 }
